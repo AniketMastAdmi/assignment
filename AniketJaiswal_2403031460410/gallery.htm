@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <style>
+    body{
+      margin: 0%;
+      border: 0%;
+    }
+
+    
+    nav{
+      background-color: rgb(20, 17, 12);
+      padding: 15px;
+      position: relative;
+      z-index: ;
+    }
+   #menu{
+    list-style: none;
+    padding: 0%;
+    margin: auto;
+    background: #4b4949;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: none;
+    border-radius: 5px;
+    z-index: 10002;
+   }
+
+   .menu-icon{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: left;
+    z-index: 1001;
+    
+   }
+
+   #menu li{
+    padding: 10px;
+    text-align: center;
+  }
+   #menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+   }
+
+   #menu li:hover{
+    background: #555;
+   }
+
+  #menu.show{
+    display: block;
+      }
+
+  .container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .section{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(rgb(255, 5, 5), rgb(0, 0, 0), rgb(0, 0, 0), alpha);
+    transition: 0.3s ease-in-out;
+  }
+
+  .section a:hover{
+    transform: scale(1.5);
+   
+
+  }
+
+  .section1:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    
+    transition: 0.4s ease-in-out;
+  }
+  .section2:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out; 
+    background-color: rgb(10, 116, 81);
+  }
+  .section3:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+  }
+
+  .section1:hover{
+    transform: scale(0.5);
+  }
+  .section2:hover{
+    transform: scale(0.5);
+  }
+  .section3:hover{
+    transform: scale(0.5);
+  }
+
+ .content{
+    padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius:10px ;
+    box-shadow:none ;
+  }
+.bg-img{
+      background-attachment:fixed;
+      background-position: center;
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      height: 200vh;
+      background-image:url(vosse-suits-pattern-refined.svg) 
+    }
+
+.border{
+       border-width: 5px;
+       height: 20vh;
+       border-style: dotted dashed solid groove;
+       border-color: tan;
+       border-radius: 50px;
+
+    }
+  
+/* 
+    p{ color: aliceblue;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+    } */
+
+    .gallery-title{
+      font-size: 2rem;
+      margin-bottom: 20px;
+      ;
+    }
+    .gallery{
+      display: grid;
+      grid-template-columns:repeat(4,1fr) ;
+      gap: 20px; 
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      
+    }
+    .gallery-item{
+      border: 3px solid #333;
+      padding: 0px;
+      background: white;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+      align-self: center;
+      width: 10rem;
+      height: 15rem;
+    }
+    .gallery-item:hover{
+      transform: scale(1.5);
+    }
+    .gallery-item img{
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid #333;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <header style="display:flex; align-items: center;  background-color: rgb(0, 0, 0);  padding: 5vh;" >
+
+    <img src="download.jpeg" alt="logo" style="height: 55px; margin-right: 10px ; border-radius: 50%;"> 
+ 
+    <h1 style="margin: 0%;    color: aliceblue; text-align: center; font-size:x-large;"> Vossé</h1>
+   </header>
+   <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+       &#9776  <!--uniqcode for hamburgewr menu (3 line)-->
+
+    </div>
+    <ul id="menu">
+      <li><a href="Home.htm">Home</a></li>
+      <li><a href="Gallery.htm">Gallery</a></li>
+      <li><a href="Contact.htm">Contact-Us</a></li>
+    </ul>
+  </nav>
+  <h1 class="gallery-title" >Gallery</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="suit1.avif" alt="">
+      <p class="caption">Suit</p>
+    </div>
+    <div class="gallery-item">
+      <img src="suit2.avif" alt="">
+      <p class="caption">Loafers</p>
+    </div>
+    <div class="gallery-item">
+      <img src="suit3.avif" alt="">
+      <p class="caption">Shirts</p>
+    </div>
+    <div class="gallery-item">
+      <img src="belt.webp" alt="">
+      <p class="caption">Belt</p>
+    </div>
+    <div class="gallery-item">
+      <img src="polo.webp" alt="">
+      <p class="caption">Poloshirt</p>
+    </div>
+    <div class="gallery-item">
+      <img src="shadow.webp" alt="">
+      <p class="caption">shadow</p>
+    </div>
+    <div class="gallery-item">
+      <img src="bag.avif" alt="">
+      <p class="caption">Bag</p>
+    </div>
+    <div class="gallery-item">
+      <img src="glasses.avif" alt="">
+      <p class="caption">glasses</p>
+    </div>
+    
+  </div>
+</body>
+</html>

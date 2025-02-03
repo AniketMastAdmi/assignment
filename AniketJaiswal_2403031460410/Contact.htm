@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav{
+      background-color: rgb(20, 17, 12);
+      padding: 15px;
+      position: relative;
+      z-index: ;
+    }
+   #menu{
+    list-style: none;
+    padding: 0%;
+    margin: auto;
+    background: #4b4949;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: none;
+    border-radius: 5px;
+    z-index: 10002;
+   }
+
+   .menu-icon{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: left;
+    z-index: 1001;
+    
+   }
+
+   #menu li{
+    padding: 10px;
+    text-align: center;
+  }
+   #menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+   }
+
+   #menu li:hover{
+    background: #555;
+   }
+
+  #menu.show{
+    display: block;
+      }
+
+  .container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .section{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(rgb(255, 5, 5), rgb(0, 0, 0), rgb(0, 0, 0), alpha);
+    transition: 0.3s ease-in-out;
+  }
+
+  .section a:hover{
+    transform: scale(1.5);
+   
+
+  }
+
+  .section1:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    
+    transition: 0.4s ease-in-out;
+  }
+  .section2:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out; 
+    background-color: rgb(10, 116, 81);
+  }
+  .section3:hover{
+    background: url(thrd-clothing-logo.svg);
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+  }
+
+  .section1:hover{
+    transform: scale(0.5);
+  }
+  .section2:hover{
+    transform: scale(0.5);
+  }
+  .section3:hover{
+    transform: scale(0.5);
+  }
+
+  .content{
+    padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius:10px ;
+    box-shadow:none ;
+  }
+  .bg-img{
+      background-attachment:fixed;
+      background-position: center;
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      height: 200vh;
+      background-image:url(vosse-suits-pattern-refined.svg) 
+    }
+
+    .border{
+       border-width: 5px;
+       height: 20vh;
+       border-style: dotted dashed solid groove;
+       border-color: tan;
+       border-radius: 50px;
+
+    }
+
+    p{ color: aliceblue;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+  </style>
+  <script defer src="script.js"></script>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+  
+ <header style="display:flex; align-items: center;  background-color: rgb(0, 0, 0);  padding: 5vh;" >
+
+   <img src="download.jpeg" alt="logo" style="height: 55px; margin-right: 10px ; border-radius: 50%;"> 
+
+   <h1 style="margin: 0%;    color: aliceblue; text-align: center; font-size:x-large;"> Vossé</h1>
+  </header>
+</head>
+<body>
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+       &#9776  <!--uniqcode for hamburgewr menu (3 line)-->
+
+    </div>
+    <ul id="menu">
+      <li><a href="Home.htm">Home</a></li>
+      <li><a href="Gallery.htm">Gallery</a></li>
+      <li><a href="Contact.htm">Contact-Us</a></li>
+    </ul>
+  </nav>
+  <main style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: auto; gap: 2re; ">
+  <section style="flex: 2; background-color: #ffffff; padding: 2rem; border-radius: 10px; margin-top: 10px; box-shadow: 0 0 10px; ">
+
+  <h2>Send Us a Message</h2>
+  <form action="" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+    <div>
+      <label for="Name" style="display: block; margin-bottom: 1rem; font-weight: bold;">Name :</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required  style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+      
+    <div>
+    <div> 
+      <label for="Age" style="display: block; margin-top:  1rem; margin-bottom: 1rem; font-weight: bold;">Age :</label>
+      <input type="number" id="age" name="age" min="1" max="120" placeholder="Your age" required
+      style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+     </div>
+      <div>
+        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;  margin-top:  1rem;">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male" style="margin-right: 1rem;">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female" style="margin-right: 1rem;">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+    
+    </div>
+
+    <div>
+      <label for="contact date" style="display: block; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold;"> Contact Date :</label>
+       <input type="date" id="contact-date" name="contact-date" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+    <div>
+      <label for="message" style="display: block; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; ">Message :</label>
+       <input type="text" placeholder="Your Message" required  style="width: 100%; height: 10rem; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; text-align:left;">
+    </div>
+    <div>
+      <button type="submit" style="display:block; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; background-color: green; ">
+         Submit
+      </button>
+    </div>
+  </form>
+  
+</section>
+
+  <aside style="flex: 1; background-color:  #498791; padding: 2rem; box-shadow: 0 0 10px  border-radius: 10px; margin-top: 10px; box-shadow: 0 0 10px;">
+  <h2>Our address</h2>
+  <address>
+    Vose.com <br> 123 avenue park <br>
+  </address>  
+    
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236213.54118006042!2d73.00827459871189!3d22.322019365445758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1738398944103!5m2!1sen!2sin" width="250" height="250" style="border:0;  border-radius: 10px; margin-top: 10px; box-shadow: 0 0 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</aside></main>
+</body>
+</html>

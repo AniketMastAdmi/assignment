@@ -1,0 +1,27 @@
+
+
+.container{
+  display: flex;
+  height: 100vh;
+  
+}
+
+.section{
+  flex: 1; /*divide it in 3 equal parts*/
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}  
+
+.section:nth-child(1){
+ 
+  background-color: green;
+}
+.section:nth-child(2){
+  
+  background-color: rgb(196, 89, 196);
+}
+.section:nth-child(3){
+  
+  background-color: rgb(84, 203, 216);
+}

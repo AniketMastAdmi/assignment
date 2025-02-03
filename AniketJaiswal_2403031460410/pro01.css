@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+    
+  }
+
+  /* .hero {
+    height: 0vh;
+    /* background-color: var(--primary-black); */
+    /* color: var(--primary-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: rem;
+    font-size: 10rem;
+    top: 10rem; */
+} */
+nav{
+  background-color: rgb(20, 17, 12);
+  padding: 15px;
+  position: relative;
+  z-index: ;
+}
+#menu{
+list-style: none;
+padding: 0%;
+margin: auto;
+background: #4b4949;
+width: 200px;
+position: absolute;
+top: 50px;
+display: none;
+border-radius: 5px;
+z-index: 10002;
+}
+
+.menu-icon{
+font-size: 30px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+text-align: left;
+z-index: 1001;
+font-size: 25px;
+left: 2rem;
+
+}
+
+#menu li{
+padding: 10px;
+text-align: center;
+}
+
+#menu li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+display: block;
+text-align: center;
+}
+
+#menu li:hover{
+background: #555;
+}
+
+#menu.show{
+display: block;
+  }
+
+.container{
+display: flex;
+width: 100%;
+height: 100vh;
+position: relative;
+
+}
+
+.section{
+flex: 1;
+position: relative;
+overflow: hidden;
+}
+
+.section a{
+display: block;
+width: 100%;
+height: 100%;
+text-decoration: none;
+color: aliceblue;
+font-size: 24px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(rgb(255, 5, 5), rgb(0, 0, 0), rgb(0, 0, 0), alpha);
+transition: 1s ease-in-out;
+}
+
+.section a:hover{
+transform: scale(1.5);
+}
+
+.section1:hover{
+background: url(suit1.avif);
+background-repeat: no-repeat;
+appearance: none;
+transition: 1s ease-in-out;
+}
+.section2:hover{
+background: url(suit2.avif);
+background-repeat: no-repeat;
+transition: 1s ease-in-out; 
+
+}
+.section3:hover{
+background: url(suit3.avif);
+background-repeat: no-repeat;
+transition: 1s ease-in-out;
+}
+
+.section1:hover{
+transform: scale(0.5);
+}
+.section2:hover{
+transform: scale(0.5);
+}
+.section3:hover{
+transform: scale(0.5);
+}
+
+.content{
+padding: 50px;
+background: white;
+margin: 20px;
+border-radius:10px ;
+box-shadow:none ;
+}
+.bg-img{
+  
+  /* background-attachment:fixed; */
+  /* background-position: center; */
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image:url(hero-bg-img.avif) 
+}
+
+.border{
+   border-width: 5px;
+   height: 20vh;
+   border-style: dotted dashed solid groove;
+   border-color: tan;
+   border-radius: 50px;
+   
+
+}
+
+p{ color: aliceblue;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
